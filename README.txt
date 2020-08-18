@@ -1,3 +1,4 @@
-*********** Curriculum Vitae***********
+*********** Juego 3 en raya***********
 
-Utilizando diferentes componentes y tablas
+Las imagees se encuentran en el archivo README.doc
+
