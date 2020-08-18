@@ -1,0 +1,107 @@
+ <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Experiencia Laboral</ion-title>
+      
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content fullscreen>
+      <ion-list>
+        <ion-list-header>Ferreteria Angel</ion-list-header>
+        <ion-reorder-group id="reorder">
+          <ion-item>
+            <ion-label>
+              Venta Materiales de construccion 
+            </ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+             Ascesoria personalizada
+            </ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+              Facturacion
+            </ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+              Inventarios
+            </ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+
+          <ion-list-header>Vidal Equipamiento</ion-list-header>
+          <ion-item>
+            <ion-label>
+              Tecnico instalador seguridad electronica
+            </ion-label>
+            <ion-reorder slot="start">
+              <ion-icon name="repeat"></ion-icon>
+            </ion-reorder>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+              CCTV
+            </ion-label>
+            <ion-reorder slot="start">
+              <ion-icon name="repeat"></ion-icon>
+            </ion-reorder>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+              Control deAccesos
+            </ion-label>
+            <ion-reorder slot="start">
+              <ion-icon name="repeat"></ion-icon>
+            </ion-reorder>
+          </ion-item>
+
+          <ion-list-header>EVIGISA(G4S)</ion-list-header>
+          <ion-reorder>
+            <ion-item>
+              <ion-label>
+                Tecnico instalador seguridad electronica
+              </ion-label>
+            </ion-item>
+          </ion-reorder>
+
+          <ion-reorder>
+            <ion-item>
+              <ion-label>
+                Cercos electricos
+              </ion-label>
+            </ion-item>
+          </ion-reorder>
+
+          <ion-reorder>
+            <ion-item>
+              <ion-label>
+                Sistemas de Alarmas domiciliarias
+              </ion-label>
+            </ion-item>
+          </ion-reorder>
+
+        </ion-reorder-group>
+      </ion-list>
+    </ion-content>
+  </ion-app>
+
+  <script>
+    function toggleReorder() {
+      const reorderGroup = document.getElementById('reorder');
+      reorderGroup.disabled = !reorderGroup.disabled;
+      reorderGroup.addEventListener('ionItemReorder', ({detail}) => {
+        detail.complete(true);
+      });
+    }
+  </script>
